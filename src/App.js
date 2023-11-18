@@ -12,7 +12,7 @@ function App() {
     <>
       <input id="1" type="number"></input>
       <input id="2" type="number"></input>
-      <input id="result"></input>
+      <input id="result" disabled></input>
       <Buttons buttons={buttons}/>
     </>
   );
