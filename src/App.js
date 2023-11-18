@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-
+import {Buttons} from "./components/buttons"
 function App() {
+  const buttons = [
+    {sign: "+"},
+    {sign: "-"},
+    {sign: "/"},
+    {sign: "*"},
+    {sign: "^"}
+  ]
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <input id="1" type="number"></input>
+      <input id="2" type="number"></input>
+      <input id="result"></input>
+      <Buttons buttons={buttons}/>
+    </>
   );
 }
 
